@@ -71,7 +71,7 @@ export default class CreateExercise extends Component {
   axios.post('http://localhost:5001/exercises/add', exercise)
   .then(res => console.log(res.data));
 
-  // window.location = '/';
+  window.location = '/';
   }
 
   render() {
@@ -81,7 +81,8 @@ export default class CreateExercise extends Component {
         <form onSubmit={this.onSubmit}>
           <div className="form-group"> 
             <label>Username: </label>
-            <select ref="userInput"
+            
+            <select
                 required
                 className="form-control"
                 value={this.state.username}
