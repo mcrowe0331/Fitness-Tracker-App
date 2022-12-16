@@ -81,7 +81,8 @@ export default class CreateExercise extends Component {
         <form onSubmit={this.onSubmit}>
           <div className="form-group"> 
             <label>Username: </label>
-            <select 
+            
+            <select
                 required
                 className="form-control"
                 value={this.state.username}
